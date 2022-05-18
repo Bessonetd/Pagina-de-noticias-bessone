@@ -52,12 +52,15 @@ header{
     color: orangered;
     font-size: 30px;
     padding-left: 5px;
+    animation-name: efecto;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
 }
-
 h1{
     font-size: 30px;
     text-transform: uppercase;
     padding-right: 5px;
+    transform: skew(-30deg);
 }
 
 span{
@@ -91,14 +94,19 @@ section{
 
 .noticia h2{
    padding-top: 5px;
-    
-
 }
 
 .noticia h2 a{
     text-decoration: none;
     color: black;
-    
+    font-size: 20px;
+    transition: all 2s;
+}
+
+.noticia h2 a:hover{
+    color: red;
+    font-size: 20px;
+    text-transform: uppercase;
 }
 
 p{
@@ -278,16 +286,39 @@ footer h3{
     padding-bottom: 5px; 
 }
 /* fin pagina contacto */
+/* animacion */
+@keyframes efecto {
+    0%{transform: rotatey(0deg);}
+    10%{transform: rotatey(20deg);}
+    20%{transform: rotatey(30deg);}
+    30%{transform: rotatey(70deg);}
+    50%{transform: rotatey(120deg);}
+    60%{transform: rotatey(180deg);}
+    70%{transform: rotatey(220deg);}
+    80%{transform: rotatey(280deg);}
+    90%{transform: rotatey(320deg);}
+    100%{transform: rotatey(360deg);}
+}
+
 
 @media only screen and (min-width: 479px){
     header h1{
         padding-right: 120px;
+    }
+    .logo{
+        transform: translate(6px, -20px);
+    }
+    .noticia h2 a:hover{
+        font-size: 28px;
     }
 }
 
 @media only screen and (min-width: 600px){
     header h1{
         padding-right: 180px;
+    }
+    .logo{
+        font-size: 40px;
     }
     .fotos{
         padding-left: 50px;
@@ -328,6 +359,9 @@ footer h3{
     }
     .noticia h2 a{
         font-size: 40px;
+    }
+    .noticia h2 a:hover{
+        font-size: 45px;
     }
     .video iframe{
         height: 400px;
