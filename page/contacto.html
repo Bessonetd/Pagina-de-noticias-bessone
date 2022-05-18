@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Contacto</title>
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <nav>
+
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./mundo.html">Mundo</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+
+        </nav>
+
+        <header>
+
+            <div class="logo"><i class="fa-regular fa-newspaper"></i></div>
+            <h1>¡Noticia <span>Hoy!</span></h1>
+            
+
+        </header>
+        
+            <section class="contacto">
+
+                <h2>Contactanos</h2>
+
+                <form action="enviar.php" method="post" enctype="text/plain">
+
+                    <label for="n">Nombre</label>
+                    <input type="text" name="n" required><br>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido"><br>
+                    <label for="correo">Correo</label>
+                    <input type="mail" name="correo" required><br>
+                    <label for="telefono">Telefono</label>
+                    <input type="number" name="telefono"><br><br>
+                    <label for="comentario">Comentario</label><br>
+                    <textarea name="comentario" id="" cols="30" rows="10" required></textarea><br>
+                    <input type="submit" value="Enviar">
+                    <input type="reset">
+        
+                </form>
+
+            </section>
+
+            <section class="video"></section>
+
+        <footer>
+            
+            <h3>Redes</h3>
+            <div class="redes">
+
+                <i class="fa-brands fa-facebook-square" id="facebook"></i>
+                <i class="fa-brands fa-instagram" id="instagram"></i>
+                <i class="fa-brands fa-twitter-square"
+                id="twitter"></i>
+
+            </div>
+
+        </footer>
+
+    </div>
+    
+</body>
+</html>
